@@ -26,7 +26,7 @@
         
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0f9b0f, #000000);
+            background: linear-gradient(135deg, #0a1a2a, #000000);
             margin: 0;
             padding: 0;
             display: flex;
@@ -120,7 +120,6 @@
             to { transform: translateY(-50%) rotate(360deg) translateX(20px) rotate(-360deg); }
         }
         
-        /* Rest of your existing CSS remains the same */
         .payment-info {
             margin-bottom: 25px;
             font-size: 18px;
@@ -151,6 +150,9 @@
             color: white;
             position: relative;
             overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .package-btn:hover {
@@ -189,14 +191,14 @@
         }
         
         .email {
-            color: #007bff;
+            color: var(--primary);
             font-weight: bold;
             text-decoration: none;
             transition: 0.3s;
         }
         
         .email:hover {
-            color: #0056b3;
+            color: var(--primary-dark);
             text-decoration: underline;
         }
         
@@ -499,12 +501,11 @@
         <div class="payment-info">Affordable Internet Packages <i>(Available on all networks)</i></div>
         
         <div class="packages-container">
-            
-            <button class="package-btn" onclick="showPaymentInstructions('7 Days - 25GB (Ksh 99)')">
+            <button class="package-btn" onclick="showPaymentInstructions('7 Days - 25GB (Ksh 69)')">
                 <span>7 Days - 25GB</span>
                 <span>Ksh 69</span>
             </button>
-            <button class="package-btn" onclick="showPaymentInstructions('14 Days - 25GB (Ksh 169)')">
+            <button class="package-btn" onclick="showPaymentInstructions('14 Days - 45GB (Ksh 169)')">
                 <span>14 Days - 45GB</span>
                 <span>Ksh 169</span>
             </button>
@@ -516,11 +517,11 @@
 
         <div class="inquiry">
             <p>Need help? Contact our support team:</p>
-              <a href="https://wa.me/254712975631?text=Hi%2C%20I%20need%20help%20with%20STARNET%20offers" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"><
+            <a href="https://wa.me/254712975631?text=Hi%2C%20I%20need%20help%20with%20STARNET%20offers" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
-            <p style="margin-top: 10px;">through email </p>
-            <a href="mailto:help.starnet2@gmail.com" class="email">email us</a>
+            <p style="margin-top: 10px;">or through email:</p>
+            <a href="mailto:help.starnet2@gmail.com" class="email">help.starnet2@gmail.com</a>
         </div>
     </div>
 
